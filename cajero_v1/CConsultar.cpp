@@ -44,7 +44,6 @@ vector<string> CConsultar::obten_datos(string l)
 
     while ((pos = l.find(delimiter)) != std::string::npos) {
         token = l.substr(0, pos);
-        cout << "token: " << token << endl;
         datos_usuario.push_back(token);
         l.erase(0, pos + delimiter.length());
     }
